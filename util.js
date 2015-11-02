@@ -148,7 +148,8 @@ function childFindAnce(child, anceNum){
  */
 function validate(){
 	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g;     // 只有中文、数字、字母和下划线，且位置不限
-	var test2 = /^1\d{10}$/;     // 验证手机号  
+	var test2 = /^1\d{10}$/;     // 验证手机号
+	var test3 = /^\d{4}$/;     //  四位数字验证码  
 }
 
 
