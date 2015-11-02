@@ -143,6 +143,13 @@ function childFindAnce(child, anceNum){
 	return result;
 }
 
+/**
+ * 正则表达式验证数据合法性
+ */
+function validate(){
+	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g;     // 只有中文、数字、字母和下划线，且位置不限
+}
+
 
 
 
