@@ -131,19 +131,19 @@ function getQueryString(name){
 
 /**
  * 根据子节点向上找祖先节点
- * @param {Element} child 子节点
- * @param {Number} ance 向上找祖先节点的层数  
+ * @param {Element} child 子节点    
+ * @param {Number} anceNum 向上找祖先节点的层数      
  * @return {Element} 祖先节点  
- */
+ */    
 function childFindAnce(child, anceNum){
 	var result = child;
-	for(var i = 0; i < anceNum; i++){        
+	for(var i = 0; i < anceNum; i++){            
 		result = result.parent();   
 	}   
 	return result;  
 }
    
-/**  
+/**    
  * 正则表达式验证数据合法性
  */
 function validate(){
