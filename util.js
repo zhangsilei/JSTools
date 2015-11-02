@@ -17,7 +17,7 @@ function setCookie(cname, cvalue, days){
 	date.setDate(date.getDate()+days);
 	var exdate = "; expires="+date.toGMTString();  
 	document.cookie = cname+"="+escape(cvalue)+exdate;   
-}
+} 
 
 /**
  * 读取Cookie
