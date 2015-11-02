@@ -16,7 +16,7 @@ function setCookie(cname, cvalue, days){
 	var date = new Date();
 	date.setDate(date.getDate()+days);
 	var exdate = "; expires="+date.toGMTString();  
-	document.cookie = cname+"="+escape(cvalue)+exdate;  
+	document.cookie = cname+"="+escape(cvalue)+exdate;   
 }
 
 /**
@@ -137,17 +137,18 @@ function getQueryString(name){
  */
 function childFindAnce(child, anceNum){
 	var result = child;
-	for(var i = 0; i < anceNum; i++){   
-		result = result.parent();
-	}
-	return result;
+	for(var i = 0; i < anceNum; i++){        
+		result = result.parent();   
+	}   
+	return result;  
 }
-
-/**
+   
+/**  
  * 正则表达式验证数据合法性
  */
 function validate(){
 	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g;     // 只有中文、数字、字母和下划线，且位置不限
+	var test2 = /^1\d{10}$/;     // 验证手机号  
 }
 
 
