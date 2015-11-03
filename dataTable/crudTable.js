@@ -4,7 +4,7 @@
  * {Elemen} tablediv 表格外层需要套上DIV，且要加上class='dataTable'               
  * {Number} rowNum 初始化时的行数     
  * {Number} colNum 初始化时的列数   
- */       
+ */        
 var DataTable = function(tablediv, rowNum, colNum){                
 	var _this = this;     
 	this.html = '<input type="text"/><button>搜索</button>' +         
