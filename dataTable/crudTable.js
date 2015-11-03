@@ -1,8 +1,8 @@
 /**
  * 基于JS的CRUD表格类（类似Java的创建方式，非控件） 
  * 原有行的按钮使用DOM2级事件绑定，新增行的按钮使用DOM0级事件绑定。   
- * {Elemen} tablediv 表格外层DIV             
- * {Number} rowNum 初始化时的行数   
+ * {Elemen} tablediv 表格外层需要套上DIV，且要加上class='dataTable'               
+ * {Number} rowNum 初始化时的行数     
  * {Number} colNum 初始化时的列数   
  */       
 var DataTable = function(tablediv, rowNum, colNum){                
@@ -47,7 +47,7 @@ var DataTable = function(tablediv, rowNum, colNum){
 	// 判断传入参数的类型或数量来实现方法重载     
 	// 增加一行          
 	DataTable.prototype.addData = function(rowOrBtn){               
-		if(typeof rowOrBtn == 'string'){     // 原有的“增”按钮进行增加行操作                      
+		if(typeof rowOrBtn == 'string'){     // 原有的“增”按钮进行增加行操作                         
 			_this.addBtns.each(function(){                                       
 				$(this).click(function(){                                  
 					childFindAnce($(this), 2).before(rowOrBtn);                                                      
