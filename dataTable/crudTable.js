@@ -1,8 +1,8 @@
 /**
  * 基于jquery的CRUD表格类（类似Java的创建方式，非控件）缺点：Controller层和View层耦合度太高，若想改变表格内容必须改动该源码。 
  * 注：原有行的按钮使用DOM2级事件绑定，新增行的按钮使用DOM0级事件绑定。创建对象时自动初始化了所有监听事件。     
- * @param {Elemen} tablediv 表格外层需要套上DIV，且要加上class='dataTable'的样式                    
- * @param {Number} rowNum 初始化时的行数        
+ * @param {Elemen} tablediv 数据表外层的DIV                    
+ * @param {Number} rowNum 初始化时的行数         
  * @param {Number} colNum 初始化时的列数                     
  */                     
 var DataTable = function(tablediv, rowNum, colNum){                       
