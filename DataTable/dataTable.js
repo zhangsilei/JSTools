@@ -5,7 +5,7 @@
  * @param {Array} titles 初始化时的表格标题   
  * @param {String} url 请求后台数据的地址  
  * @param {String} method 请求的方法
- * @param {Object} [userdata] 前台需要传递的参数（可选）
+ * @param {Object} [userdata] 前台需要传递的参数
  * @param {String} datakey 表格数据的key
  * @param {Array} columns 要获取的字段名
  * @param {String} delurl 删除数据的接口
