@@ -3,7 +3,7 @@
  * 
  * 常用的工具方法，所有代码都基于原生JS
  *
- * 
+ *  
  ***************************************************/
 
 /**
@@ -15,8 +15,8 @@
 function setCookie(cname, cvalue, days){
 	var date = new Date();
 	date.setDate(date.getDate()+days);
-	var exdate = "; expires="+date.toGMTString();  
-	document.cookie = cname+"="+escape(cvalue)+exdate;   
+	var exdate = "; expires="+date.toGMTString();     
+	document.cookie = cname+"="+escape(cvalue)+exdate;     
 } 
 
 /**
@@ -150,6 +150,7 @@ function validate(){
 	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g;     // 只有中文、数字、字母和下划线，且位置不限
 	var test2 = /^1\d{10}$/;     // 验证手机号
 	var test3 = /^\d{4}$/;     //  四位数字验证码  
+	var test4 = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/     // 邮箱
 }
 
 
