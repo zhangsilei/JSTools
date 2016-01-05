@@ -9,7 +9,7 @@
  * @param {String} datakey 表格数据的key
  * @param {Array} columns 要获取的字段名
  * @param {String} delurl 删除数据的接口
- * @param {String} updateurl 更新数据的接口
+ * @param {String} updateurl 更新数据的接口 
  * @param {String} addurl 增加新数据的接口
  */      
 var DataTable = function(tablediv, titles, url, method, userdata, datakey, columns, delurl, updateurl, addurl){
