@@ -1,5 +1,4 @@
 .dataTable{
-	background: grey;
 	/*width: 800px;*/
 	font-family: "SimHei";      
 }
@@ -11,10 +10,13 @@
 .dataTable table tr td{     
 	width: 7%;
 	border-bottom: 1px solid #999;       
-	border-right: 1px solid #999;   
+	border-right: 1px solid #999;     
 	padding: 5px 0px 5px 10px;  
 }       
 .dataTable table thead tr td{
 	padding-top: 20px; 
 	font-weight: 900;
+}
+.dataTable table tbody input{
+	width: 90%;
 }
