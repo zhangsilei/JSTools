@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<title>基于jQuery的CRUD表格</title>
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="DataTable.css">
+</head>     
+<body>     
+    
+	<div class='dataTable'></div>  
+          
+<script src="../public/jquery-1.11.3.min.js"></script>      
+<script src="DataTable.js"></script>               
+<script type="text/javascript"> 
+	// demo        
+	$(function(){  
+		new DataTable( 
+				$('.dataTable'),     // table的父容器
+				['ID', '姓名', '年龄'],     // 初始化标题名称，应该和下面的需要拿到的字段保持一致
+				'/WebTest/Servlet/GetUserInfo',     // 获取表格数据的接口     
+				'get',     // 请求表格数据的方式
+				null,     // 获取表格数据需要传递的参数，没有就传null
+				'data',     // 所获得的表格数据的key
+				['id', 'name', 'age'],     // 需要拿到的字段
+				'/WebTest/Servlet/DelUserInfo',     // 删除数据的接口
+				'/WebTest/Servlet/UpdateUserInfo',     // 更新数据的接口
+				'/WebTest/Servlet/AddUserInfo'     // 增加新数据的接口
+		);               
+	})      
+</script>  
+</body>       
+</html>
+ 
 
