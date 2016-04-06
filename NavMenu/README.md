@@ -42,8 +42,27 @@
   <script src="http://dreamon324.github.io/JSLibs/NavMenu/dep/jquery-1.12.2.min.js"></script>
   <script src="http://dreamon324.github.io/JSLibs/NavMenu/src/NavMenu.min.js"></script>
   ```
+
+3. 粘贴html代码块
+  ```html
+  <div class="nav-menu">     
+		<ul>
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a>
+				<ul>  
+					<li><a href="#">affdf</a></li>
+					<li><a href="#">basdf</a></li>
+					<li><a href="#">casdfasdf</a></li> 
+				</ul>
+			</li>
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a></li>
+		</ul>
+	</div>
+	```
   
-3. 初始化 NavMenu ：
+4. 初始化 NavMenu ：
   ```js
   $(function() {
     $('.nav-menu').NavMenu({
