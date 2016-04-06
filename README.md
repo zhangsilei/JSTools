@@ -1,8 +1,16 @@
-<h3>该仓库包含了个人编写的JS工具类、各种插件以及炫酷的动画效果等（不断更新中...）</h3>
-1. <a href="https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/Util/util.js">util.js</a>                     
-  (1) 介绍：基于原生JS的工具类，所有方法都经过实测，目前未发现bug，但不排除存在坑的可能性。</br>
+##该仓库包含了个人编写的JS工具类、各种插件以及炫酷的动画效果等（不断更新中...）
 
-2. <a href="https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/DataTable/dataTable.js">dataTable.js</a></br>             (1) 介绍：基于jQuery下的CRUD表格，创建方式类似Java类，非控件。详见<a href="https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/DataTable/dataTable.html">demo</a></br>
-  (2) 随笔：写这个主要是想练习JS的OOP。刚从Java转前端不久，对前端组件化的理解还是知之甚少。总想通过new啊new的方式来做。不过前端组件化是趋势，以后会慢慢get☑️。
+#### 1. util.js
+- 基于原生JS的工具类
+- [直接使用](https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/Util/util.js)
+
+#### 2. dataTable.js
+- 基于jQuery下的CRUD表格，创建方式类似Java类，非控件。
+- [效果展示](https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/DataTable/dataTable.js)
+
+#### 3. NavMenu.js
+- 基于jQuery的轻量级菜单插件  
+- [效果展示](http://dreamon324.github.io/JavaScriptLibs/NavMenu/demo.html)    
+- [使用方法](https://github.com/DreamOn324/JavaScriptLibs/tree/master/NavMenu)
 
   
