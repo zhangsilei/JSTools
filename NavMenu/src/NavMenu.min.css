@@ -1,0 +1,3 @@
+.nav-menu ul{font-family:'Arial','Microsoft YaHei','黑体','宋体',sans-serif;margin:0;padding:0;list-style:none}
+.nav-menu a{display:inline-block;width:100%;text-align:center;text-decoration:none}.nav-menu>ul>li{line-height:40px;position:relative;float:left;height:40px;cursor:pointer}
+.nav-menu>ul>li:hover ul{display:block}.nav-menu>ul>li>ul{position:absolute;top:40px;left:0;display:none}.nav-menu>ul>li>ul>li{height:40px}
