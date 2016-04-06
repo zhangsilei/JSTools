@@ -6,24 +6,24 @@
 
 - 参数说明 ： 
 
-  一级菜单参数 ：
-    firstFontSize: '16px',
-    firstFontColor: '#fff',
-    firstBgColor: '#0E90D2',
-    firstHoverFontColor: '#fff',
+  一级菜单参数 ：<br>
+    firstFontSize: '16px',<br>
+    firstFontColor: '#fff',<br>
+    firstBgColor: '#0E90D2',<br>
+    firstHoverFontColor: '#fff',<br>
     firstHoverBgColor: '#0C79B1',
 
-  二级菜单参数 ：
-    secondFontSize: '16px',
-    secondFontColor: '#fff',
-    secondBgColor: '#0E90D2',
-    secondHoverFontColor: '#fff',
+  二级菜单参数 ：<br>
+    secondFontSize: '16px',<br>
+    secondFontColor: '#fff',<br>
+    secondBgColor: '#0E90D2',<br>
+    secondHoverFontColor: '#fff',<br>
     secondHoverBgColor: '#0C79B1',
 
-  菜单宽度（除去自身内容的宽度之外，附加的横向宽度。一二级菜单相同）：
+  菜单宽度（除去自身内容的宽度之外，附加的横向宽度。一二级菜单相同）：<br>
     itemWidth: 20,
 
-  菜单间隙（仅限一级菜单）：
+  菜单间隙（仅限一级菜单）：<br>
     itemMargin: 1,
 
   默认主题 ：
