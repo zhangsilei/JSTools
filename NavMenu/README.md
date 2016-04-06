@@ -30,23 +30,21 @@
 
 3. [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/demo.html)
 
+
 #### 二、使用说明
 
-1. 获取 NavMenu
-  - [直接下载NavMenu.js](https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/NavMenu/src/NavMenu.js)
-
-2. 引入 NavMenu 样式 ：
+1. 引入 NavMenu 样式 ：
   ```html
   <link rel="stylesheet" href="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/src/NavMenu.min.css"/>
   ```
   
-3. 在 jQuery 之后引入 NavMenu 插件 ：
+2. 在 jQuery 之后引入 NavMenu 插件 ：
   ```html
   <script src="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/dep/jquery-1.12.2.min.js"></script>
   <script src="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/src/NavMenu.min.js"></script>
   ```
   
-4. 初始化 NavMenu ：
+3. 初始化 NavMenu ：
   ```js
   $(function() {
     $('.nav-menu').NavMenu({
