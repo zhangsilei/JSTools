@@ -29,7 +29,7 @@
   默认主题 ：
   theme: 'blue'     // 包含：blue、dark
 
-- [使用示例](http://amazeui.github.io/datatables/docs/demo.html)
+- [使用示例](http://dreamon324.github.io/JavaScriptLibs/NavMenu/demo.html)
 
 ** 使用说明：**
 
