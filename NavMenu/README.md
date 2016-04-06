@@ -10,16 +10,20 @@
     - firstBgColor: '#0E90D2',  
     - firstHoverFontColor: '#fff',  
     - firstHoverBgColor: '#0C79B1',
+
   - 二级菜单参数示例
     - secondFontSize: '16px',  
     - secondFontColor: '#fff',  
     - secondBgColor: '#0E90D2',  
     - secondHoverFontColor: '#fff',  
     - secondHoverBgColor: '#0C79B1',
+
   - 菜单宽度（除去自身内容的宽度之外，附加的横向宽度。一二级菜单相同）  
     itemWidth: 20,
+
   - 菜单间隙（仅限一级菜单）  
     itemMargin: 1,
+
   - 默认主题  
   theme: 'blue'     // 包含：blue、dark
 
