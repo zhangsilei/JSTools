@@ -7,11 +7,11 @@
 - 参数说明 ： 
 
   一级菜单参数 ：
-    firstFontSize: '16px',
-    firstFontColor: '#fff',
-    firstBgColor: '#0E90D2',
-    firstHoverFontColor: '#fff',
-    firstHoverBgColor: '#0C79B1',
+    firstFontSize: '16px',<br>
+    firstFontColor: '#fff',<br>
+    firstBgColor: '#0E90D2',<br>
+    firstHoverFontColor: '#fff',<br>
+    firstHoverBgColor: '#0C79B1',<br>
 
   二级菜单参数 ：
     secondFontSize: '16px',
