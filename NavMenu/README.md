@@ -30,7 +30,6 @@
 
 3. [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/demo.html)
 
-
 #### 二、使用说明
 
 1. 引入 NavMenu 样式 ：
