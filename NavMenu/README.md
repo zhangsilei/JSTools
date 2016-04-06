@@ -2,9 +2,8 @@
 
 #### 插件说明
 - NavMenu是一个基于jQuery的轻量级菜单插件，可以根据喜好进行个性化的UI定制。
-- 参数说明 ：  
-
-  一级菜单参数 ：  
+- 参数说明  
+  一级菜单参数  
     firstFontSize: '16px',  
     firstFontColor: '#fff',  
     firstBgColor: '#0E90D2',  
