@@ -1,7 +1,8 @@
 ## NavMenu Plugin
 
 #### 一、插件说明
-1. NavMenu是一个基于jQuery的轻量级菜单插件，可以根据喜好进行个性化的UI定制。
+1. NavMenu是一个基于jQuery的轻量级菜单插件，可以根据喜好进行个性化的UI定制。  
+
 2. 参数说明  
   - 一级菜单参数示例
     - firstFontSize: '16px',  
