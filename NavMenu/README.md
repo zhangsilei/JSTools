@@ -36,10 +36,6 @@
 1. 获取 NavMenu
 
   - [直接下载](https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/NavMenu/src/NavMenu.js)
-  - 引入路径 ：  
-    ```
-    <script src="http://dreamon324.github.io/JavaScriptLibs/NavMenu/src/NavMenu.js"></script>
-    ```
     
 2. 引入 NavMenu 样式 ：
   ```html
