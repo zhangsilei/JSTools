@@ -27,7 +27,7 @@
   - 默认主题  
   theme: 'blue'     // 包含：blue、dark
 
-3. [效果展示](http://dreamon324.github.io/JavaScriptLibs/NavMenu/demo.html)
+3. [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/demo.html)
 
 #### 二、使用说明
 1. 获取 NavMenu
