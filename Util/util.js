@@ -111,6 +111,15 @@ var browser={
   language:(navigator.browserLanguage || navigator.language).toLowerCase()
 };
 
+/**   
+ * 检测浏览器类型
+ * @param {String} browserStr 浏览器标志字符串    
+ * @return {boolean}      
+ */    
+function browserType(browserStr){      
+  return (navigator.userAgent.indexOf(browserStr) != -1) ? true: false;
+}
+
 /**
  * 检查浏览器是否支持placeholder
  * @return {Boolean} 是否支持
@@ -127,6 +136,7 @@ function getQueryString(name){
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
     var r = window.location.search.substr(1).match(reg);
     if(r!=null)return  unescape(r[2]); return null;
+    // if(r!=null)return r[2]; return null; 
 }
 
 /**
@@ -144,13 +154,64 @@ function childFindAnce(child, anceNum){
 }
    
 /**    
- * 正则表达式验证数据合法性
+ * 正则表达式验证数据合法性   
  */
 function validate(){
-	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g;     // 只有中文、数字、字母和下划线，且位置不限
-	var test2 = /^1\d{10}$/;     // 验证手机号
+	var test1 = /^[a-zA-Z0-9_\u4e00-\u9fa5]+$/;     // 只有中文、数字、字母和下划线，且位置不限
+	var test2 = /^0?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/;     // 验证手机号
 	var test3 = /^\d{4}$/;     //  四位数字验证码  
 	var test4 = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/     // 邮箱
+}
+
+/**
+ * 触摸事件优先
+ * 不可取的方案，会有点透。
+ * 使用开源库fastclick可以解决300ms延迟
+ * @return {boolean} 
+ */
+function clickEvent() {
+  return ('ontouchend' in document.documentElement) ? 'touchend' : 'click';
+}
+
+/**
+ * 获取当前所在城市   
+ * 调用此方法需要在页面中引入百度地图API
+ * API链接：http://api.map.baidu.com/api?v=1.2"
+ */
+var getLocation = function(){  
+  var options = {
+    enableHighAccuracy: true,   
+    maximumAge:1000   
+  }  
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
+  }else{
+    alert("您的浏览器不支持定位");    
+  }  
+}
+function onSuccess(position){
+  var longitude =position.coords.longitude;     // 经度      
+  var latitude = position.coords.latitude;     // 纬度 
+  // 生成坐标点   
+  var point = new BMap.Point(longitude,latitude);  
+  new BMap.Geocoder().getLocation(point,function(rs){       
+    var addComp = rs.addressComponents;
+    // session.getLocation = 'success';
+    // session.setItem('curCity', addComp.city);
+    alert('定位成功:' + addComp.city);
+  })
+}     
+function onError(error){
+  switch(error.code){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      // session.getLocation = 'fali';
+      // session.setItem('curCity', '定位失败');
+      alert('定位失败');
+      break;
+  }
 }
 
 

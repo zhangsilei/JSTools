@@ -28,19 +28,19 @@
   - 默认主题  
   theme: 'blue'     // 包含：blue、dark
 
-3. [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/demo.html)
+3. [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/src/demo.html)
 
 #### 二、使用说明
 
 1. 引入 NavMenu 样式 ：
   ```html
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/src/NavMenu.min.css"/>
+  <link rel="stylesheet" href="http://dreamon324.github.io/JSLibs/NavMenu/src/NavMenu.min.css"/>
   ```
   
 2. 在 jQuery 之后引入 NavMenu 插件 ：
   ```html
-  <script src="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/dep/jquery-1.12.2.min.js"></script>
-  <script src="https://raw.githubusercontent.com/DreamOn324/JSLibs/master/NavMenu/src/NavMenu.min.js"></script>
+  <script src="http://dreamon324.github.io/JSLibs/NavMenu/dep/jquery-1.12.2.min.js"></script>
+  <script src="http://dreamon324.github.io/JSLibs/NavMenu/src/NavMenu.min.js"></script>
   ```
   
 3. 初始化 NavMenu ：
