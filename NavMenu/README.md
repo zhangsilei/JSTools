@@ -34,7 +34,6 @@
 ** 使用说明：**
 
 1. 获取 NavMenu
-
   - [直接下载](https://raw.githubusercontent.com/DreamOn324/JavaScriptLibs/master/NavMenu/src/NavMenu.js)
     
 2. 引入 NavMenu 样式 ：
