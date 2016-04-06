@@ -38,16 +38,22 @@
   - [直接下载](https://github.com/amazeui/datatables/archive/master.zip)
 
 2. 引入 NavMenu 样式 ：
-
+  
+  ```html
   <link rel="stylesheet" href="path/to/NavMenu.css"/>
+  ```
 
 3. 在 jQuery 之后引入 NavMenu 插件 ：
-
+  
+  ```html
   <script src="path/to/jquery.min.js"></script>
   <script src="path/to/NavMenu.min.js"></script>
+  ```
 
-4. 初始化 NavMenu:
+4. 初始化 NavMenu ：
 
+  ```js
   $(function() {
     $('.nav-menu').NavMenu();
   });
+  ```
