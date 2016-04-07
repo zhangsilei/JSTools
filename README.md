@@ -9,9 +9,4 @@
 - [效果展示]()
 - [使用方法]()
 
-#### 3. NavMenu.js
-- 基于jQuery的轻量级菜单插件  
-- [效果展示](http://dreamon324.github.io/JSLibs/NavMenu/src/demo.html)    
-- [使用方法](https://github.com/DreamOn324/JSLibs/tree/master/NavMenu)
-
   
