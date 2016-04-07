@@ -9,11 +9,11 @@
 
 #### 2. Ajax action
 - XMLHttpRequest的初始化、Ajax发送、Ajax响应处理。
-- [查看源码](https://raw.githubusercontent.com/DreamOn324/JSLibs/master/Ajax.js)
+- [查看源码](https://raw.githubusercontent.com/DreamOn324/JSLibs/master/ajax.js)
 
 #### 3. Terminal
 - 判断终端类型、浏览器类型等。
-- [查看源码](https://raw.githubusercontent.com/DreamOn324/JSLibs/master/Terminal.js)
+- [查看源码](https://raw.githubusercontent.com/DreamOn324/JSLibs/master/terminal.js)
 
 #### 4. Baidu Map 
 - 百度地图定位
