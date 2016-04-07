@@ -3,7 +3,7 @@
 var XMLHttpReq;
 /**
  * 初始化XMLHttpRequest对象
- */
+ */    
 function initXMLHttpRequest() {
 	try {
 		XMLHttpReq = new ActiveXObject('Msxml2.XMLHTTP'); // 高版本IE

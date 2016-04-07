@@ -6,7 +6,7 @@
  * @type {boolean} 选定终端类型的布尔值
  */
 var browser = {
-	versions: function() {
+	versions: function() {    
 		var u = navigator.userAgent;
 		return {
 			trident: u.indexOf('Trident') > -1, //IE内核
