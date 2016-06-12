@@ -65,6 +65,7 @@ function clickEvent() {
 
 /**
  * 阻止事件冒泡
+ * @param {Event} e 事件
  */
 function stopPropagation(e) {
   e = e || window.event;
