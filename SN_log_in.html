@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>苏宁易购</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: Microsoft Yahei;
+		}
+		body{
+			background: #e90154;
+		}
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		.content{
+			width: 1010px;
+			margin:0 auto;
+		}
+		.pic{
+			float: left;
+			margin-top: 50px;
+			outline: none;
+		}
+		.form{
+			border: 2px solid #fde6ee;
+			margin-left: 70px;
+			margin-top: 80px;
+			padding: 30px 24px 0;
+			background: #fde6ee;
+			width: 338px;
+			height: 360px;
+			float: left;
+			border-radius: 4px;
+		}
+		.welcome{
+			height: 20px;
+			font-size: 20px;
+			margin-bottom: 40px; 
+		}
+		.usr,.pwd{
+			width: 336px;
+			height: 40px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+			background: #fff;
+		}
+		.u-ico{
+			float: left;
+			width: 40px;
+			height: 40px;
+			background: url(http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/OZwGkm7iGCYglEKh8HxW*3d*P9fs.AbNJpo50SzgExQ!/r/dOUAAAAAAAAA);			
+		}
+		.p-ico{
+			float: left;
+			width: 40px;
+			height: 40px;
+			background: url(http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/JZ3oq4T4vPVoXYOWroiVSB3ibZY.PCcZEm9yrhtZ0ws!/r/dOEAAAAAAAAA);
+		}
+		.u-text,.p-text{
+			width: 294px;
+			height: 18px;
+			margin: 11px 0;
+			float: left;
+			border-style: none;
+			outline: none;
+		}
+		.check{
+			float: left;
+		}
+		.rem{
+			display: block;
+			margin-left: 5px;
+			height: 13px;
+			line-height: 13px;
+			font-size: 12px;
+			float: left;
+			color: #666;
+		}
+		.warn-msg{
+			position: relative;
+			top: -5px;
+			width: 218px;
+			height: 22px;
+			float: right;
+			padding: 0 10px;
+			background: #fffff0;
+			border: 1px solid #fc6;
+			line-height: 22px;
+			font-size: 12px;
+			color: #333;
+			display: none;
+		}
+		.w-ico{
+			float: left;
+			width: 22px;
+			height: 22px;
+			margin-right: 5px;
+			background: url(http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/GLka3SmDcwhnd8ee*0eQwAEyoyNB3rz.VIznNRIHb4s!/r/dNoAAAAAAAAA);
+		}
+		.up{
+			height: 197px;
+			padding-bottom: 20px;
+		}
+		.login{
+			display: block;
+			width: 338px;
+			height: 40px;
+			margin-bottom: 10px;
+			background: #ff9c00;
+			line-height: 40px;
+			font-weight: bold;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.login:hover{
+			background: #fb0;
+		}
+		.register{
+			height: 12px;
+			float: left;
+			font-size: 12px;
+			color: #f90;
+			cursor: pointer;
+		}
+		.register:hover{
+			text-decoration: underline;
+		}
+		.forget{
+			height: 12px;
+			float: right;
+			font-size: 12px;
+			cursor: pointer;
+		}
+		.forget:hover{
+			color: #f60;
+			text-decoration: underline;
+		}
+		.c-login{
+			margin-top: 20px;
+			font-size: 12px;
+			color: #999;
+			text-align: center;
+		}
+		.cooperation{
+			margin-top: 10px;
+		}
+		.cooperation a{
+			float: left;
+			cursor: pointer;
+			font-size: 12px;
+			padding: 0 20px;
+			border-right: 1px solid #ddd;
+			outline: none;
+		}
+		.cooperation a:hover{
+			text-decoration: underline;
+			color: #f60;
+		}
+		.cf{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<a href="http://sale.suning.com/sc/ko618bf/index.html" class="pic"><img src="http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/YxR7uWIH9hJB3pKyYGfiqbw6ZNN5I5FfgrhUlbSpH*M!/r/dAwBAAAAAAAA"></a>
+		<div class="form">
+			<div class="up">
+				<p class="welcome">欢迎登录</p>
+				<div class="usr">
+					<i class="u-ico"></i>
+					<input type="text" class="u-text" placeholder="用户名/手机/邮箱/门店会员卡号" name="usr">
+				</div>
+				<div class="pwd">
+					<i class="p-ico"></i>
+					<input type="password" class="p-text" placeholder="密码" name="pwd">
+				</div>
+				<div class="auto-login" id="auto-login">
+					<label for="check">
+						<input type="checkbox" class="check" name="check">
+						<span class="rem">记住密码</span>
+					</label>
+					<div class="warn-msg" id="warn-msg">
+						<p>
+							<i class="w-ico"></i>
+							公共场所不建议自动登录！
+						</p>
+					</div>
+					<div class="cf"></div>
+				</div>
+				<div class="cf"></div>
+			</div>
+			<div class="down">
+				<a class="login" name="login">登&nbsp&nbsp&nbsp&nbsp录</a>
+				<div class="links">
+					<a class="register" href="https://reg.suning.com/person.do?myTargetUrl=http%3A%2F%2Fwww.suning.com%2F">免费注册，有惊喜></a>
+					<a class="forget" href="https://aq.suning.com/asc/forgetpsw.do">忘记密码?</a>
+				</div>
+				<div class="cf"></div>
+				<div >
+					<p class="c-login">
+						<span>使用以下账号登陆</span>
+					</p>
+					<p class="cooperation">
+						<a href="#" style="padding-left:0;">门店会员卡</a>
+						<a href="#">易付宝</a>
+						<a href="#">微信</a>
+						<a href="#">QQ</a>
+						<a href="#" style="padding-right:0;border-right:0;">PPTV</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="cf"></div>
+	</div>
+
+	<script type="text/javascript">
+	// 读取cookie
+	function getCookie(c_name){
+		if (document.cookie.length > 0) {
+			var c_start = document.cookie.indexOf(c_name + "=");
+			if (c_start != -1) {
+				c_start = c_start + c_name.length +1;
+				var c_end = document.cookie.indexOf(";",c_start);
+				if (c_end == -1) {
+					c_end = document.cookie.length;
+				}
+				return unescape(document.cookie.substring(c_start,c_end));
+			}
+		}
+		return ""
+	}
+
+	// 获取账号密码
+	window.onload = function (){
+		if (getCookie('rem') == "true") {
+			document.getElementsByName('check')[0].checked = true
+			document.getElementsByName('usr')[0].value = getCookie('usr');
+			document.getElementsByName('pwd')[0].value = getCookie('pwd');
+			document.getElementById('warn-msg').style.display = 'block';
+		}
+	}
+	// 保存账号密码
+	document.getElementsByName('login')[0].onclick = function () {
+		if (document.getElementsByName('check')[0].checked == true) {
+			document.cookie = "rem=" + escape('true');
+			document.cookie = "usr=" + escape(document.getElementsByName('usr')[0].value);
+			document.cookie = "pwd=" + escape(document.getElementsByName('pwd')[0].value);
+			console.log (document.cookie);
+		}
+	}
+	// 显示提示
+	document.getElementById('auto-login').onclick = function(){
+		if (document.getElementsByName('check')[0].checked == true) {
+			document.getElementById('warn-msg').style.display = 'block';
+		}
+		else{
+			document.getElementById('warn-msg').style.display = 'none';
+		}
+	}
+</script>
+</body>
+</html>

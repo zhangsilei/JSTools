@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>慕课网</title>
+	<meta charset="utf-8">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: Microsoft Yahei;
+		}
+		li,a{
+			text-decoration: none;
+			color: #000;
+		}
+		a{
+			cursor: pointer;
+		}
+		.menu{
+			height: 60px;
+			padding: 10px 10px 10px 0;
+			/*background: pink;*/
+			background: #fff;
+		}
+		.left li{
+			display: block;
+			float: left;
+		}
+		.logo{
+			display: block;
+			width: 138px;
+			margin: 12px 21px;
+		}
+		.l-char{
+			width: 72px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			color: #07111b;
+		}
+		.l-char a:hover{
+			color: #f01414;
+		}
+		.right li{
+			display: block;
+			float: right;
+		}
+		.user{
+			position: relative;
+		}
+		.usr{
+			display: block;
+			width: 60px;
+			height: 60px;
+		}
+		.header{
+			margin: 12px;
+			border: 2px solid #fff;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+		}
+		.user:hover .header{
+			border: 2px solid #f01414;
+		}
+		.u-card{
+			position: absolute;
+			top: 60px;
+			right: 0;
+			width: 300px;
+			padding-top: 8px;
+			height: 210px;
+			background: url(http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/U8t.te.k1Rjkytn.0Z.8H8gKBKnmvZXCAWN9GltA*xk!/r/dAsBAAAAAAAA);
+			display: none;
+		}
+		.card-top{
+			height: 100px;
+			padding-left: 100px;
+			position: relative;
+		}
+		.u-header{
+			width: 60px;
+			height: 60px;
+			margin-top: 20px;
+			margin-left: -82px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			float: left;
+		}
+		.name{
+			display: inline-block;
+			color: #fff;
+			padding-top: 30px;
+			font-size: 18px;
+		}
+		.exp,.credit{
+			color: #fff;
+			font-size: 13px;
+			font-weight: bold;
+			margin-right: 12px;
+			line-height: 40px;
+		}
+		.fa-cog{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			opacity: 0.6;
+			color: #fff;
+			font-size: 18px;
+		}
+		.fa-cog:hover{
+			opacity: 1;
+		}
+		.card-history{
+			position: relative;
+			width: 180px;
+			height: 40px;
+			padding: 18px 74px 14px 46px;
+		}
+		.fa-clock-o{
+			position: absolute;
+			top: 22px;
+			left: 20px;
+			display: block;
+			color: #787d82;
+			font-size: 14px;
+		}
+		.title{
+			width: 180px;
+			display: block;
+			margin-bottom: 4px;
+			font-size: 13px;
+			color: #787d82;
+			font-weight: bold;
+		}
+		.chapter{
+			width: 180px;
+			display: block;
+			font-size: 12px;
+			color: #787d82;
+		}
+		.continue{
+			position: absolute;
+			top: 18px;
+			right: 20px;
+			color: #f01400;
+			font-size: 12px;
+		}
+		.continue:hover{
+			color: #d81200;
+		}
+		.card-bottom{
+			padding: 0 20px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+		}
+		.Q,.W{
+			color: #787d82;
+			margin-right: 30px;
+		}
+		.exit{
+			color: #787d82;
+			float: right;
+		}
+		.r-char{
+			display: block;
+			width: 60px;
+			height: 60px;
+		}
+		.r-char-search{
+			display: block;
+			width: 38px;
+			height: 60px;
+		}
+		.r-icon{
+			font-size: 18px;
+			margin: 21px;
+			color:#787d82; 
+		}
+		.mobile1{
+			font-size: 24px;
+			margin: 18px 25px;
+		}
+		.r-icon:hover{
+			color: #f01414;
+		}
+		.download{
+			position: relative;
+		}
+		.app{
+			position: absolute;
+			top: 65px;
+			left: -57px;
+			width: 140px;
+			height: 166px;
+			text-align: center;
+			padding: 24px 20px 18px;
+			background: url(http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/dVkmGwKCX.FB3WexX5rHIC*uznUj4.DnQy.mMWEdpSo!/r/dI0BAAAAAAAA);
+			display: none;
+		}
+		.app-text{
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.app-type{
+			color: #787d82;
+			font-size: 12px;
+		}
+		.search-area{
+			width: 210px;
+			height: 38px;
+			margin: 10px 5px 10px 0;
+		}
+		.search{
+			font-size: 18px;
+			color:#787d82; 
+			margin: 21px 21px 21px 0px;
+		}
+		.search:hover{
+			color: #f01414;
+		}
+		.search-input{
+			width: 0px;
+			height: 27px;
+			padding: 5px 10px;
+			border-style: none;
+			border-bottom: 1px solid #d9dde1;
+			outline: none;
+			font-size: 12px;
+			float: right;
+			/*background: pink;*/
+			background: #fff;
+			/*display: none;*/
+			opacity: 0;
+		}
+		.cf{
+			clear: both;
+		}
+		.bg{
+			width: 100%;
+			height: 1000px;
+			background: #fff;
+		}
+		.top{
+			position: fixed;
+			right: 0;
+			bottom: 80px;
+			width: 26px;
+			height: 212px;
+			padding: 0 15px;
+			background: #fff;
+			box-shadow: -2px 2px 5px 3px #f3f3f3;
+		}
+		.up-ico{
+			display: block;
+			font-size: 24px;
+			color: #b5b9ca;
+			text-align: center;
+			height: 52px;
+			line-height: 52px;
+			border-bottom: 1px solid #edf1f2;
+		}
+		.up-ico:hover{
+			color: #14191e;
+		}
+		.fa-angle-up{
+			font-size: 37px;
+		}
+		.mobile2{
+			font-size: 34px;
+		}
+		.fa-wechat{
+			border-bottom: none;
+		}
+		.app-box{
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			right: 59px;
+			bottom: -1px;
+			box-shadow: 0 3px 10px #8b8b8b;
+		}
+		.wechat-box{
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			right: 59px;
+			bottom: -1px;
+			box-shadow: 0 3px 10px #8b8b8b;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="left">
+			<ul>
+				<li>
+					<a href="http://www.imooc.com/" class="logo">
+						<img src="http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/zSqV20fZed0XVHXWJhxJWR0Uj8otV.UPS7rjDm9ANho!/r/dNoAAAAAAAAA">
+					</a>
+				</li>
+				<li class="l-char">
+					<a href="http://coding.imooc.com/" class="practive">实战</a>
+				</li>
+				<li class="l-char">
+					<a href="http://www.imooc.com/course/program" class="plan">计划</a>
+				</li>
+				<li class="l-char">
+					<a href="http://www.imooc.com/wenda" class="ask">猿问</a>
+				</li>
+				<li class="l-char">
+					<a href="http://www.imooc.com/article" class="note">手记</a>
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li class="user" id="user">
+					<a href="#" class="usr">
+						<img src="http://tp3.sinaimg.cn/5353258650/180/5749103170/0" class="header">
+					</a>
+					<div class="u-card" id="u-card">
+						<div class="card-top">
+							<a href="#">
+								<img src="http://tp3.sinaimg.cn/5353258650/180/5749103170/0"  class="u-header">
+							</a>
+							<a href="#" class="name">薛之谦</a>
+							<p>
+								<a href="#" class="exp">经验
+									<b>1731</b>
+								</a>
+								<a href="#" class="credit">积分
+									<b>0</b>
+								</a>
+							</p>
+							<a href="#">
+								<i class="fa fa-cog"></i>
+							</a>
+						</div>
+						<div class="card-history">
+							<i class="fa fa-clock-o"></i>
+							<div>
+								<span class="title">JavaScript进阶篇</span>
+								<span class="chapter">9-1 认识DOM</span>
+							</div>
+							<a href="#" class="continue">继续</a>
+						</div>
+						<div class="card-bottom">
+							<a href="#" class="Q">发问题</a>
+							<a href="#" class="W">写手记</a>
+							<a href="#" class="exit">退出</a>
+							<div class="cf"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="http://www.imooc.com/u/1198187/messages" class="r-char msg">
+						<i class="fa fa-envelope r-icon"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.imooc.com/u/1198187/notices" class="r-char inform">
+						<i class="fa fa-bell r-icon"></i>
+					</a>
+				</li>
+				<li class="download" id="download">
+					<a href="http://www.imooc.com/mobile/app" class="r-char">
+						<i class="fa fa-mobile mobile1 r-icon"></i>
+					</a>
+					<div class="app" id="app">
+						<p class="app-text">慕课网APP下载</p>
+						<p class="app-type">iPhone / Android /iPad</p>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="r-char-search" id="search">
+						<i class="fa fa-search search"></i>
+					</a>
+				</li>
+				<li>
+					<div class="search-area">
+						<input type="text" class="search-input" placeholder="请输入想搜索的内容…" autocomplete="off"  id="s-area">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="cf"></div>
+	</div>
+	<div class="bg">
+		<img src="http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/jRfPiUEmyKlhRIBUV*7hkXLD4Gf8wkxZzwHUiClXUR8!/r/dAwBAAAAAAAA">
+	</div>
+	<div class="top">
+		<a href="#" class="up-ico" title="返回顶部">
+			<i class="fa fa-angle-up"></i>
+		</a>
+		<a href="http://www.imooc.com/user/feedback" class="up-ico" title="意见反馈">
+			<i class="fa fa-commenting-o"></i>
+		</a>
+		<a class="up-ico" title="app 下载">
+			<i class="fa fa-mobile mobile2" id="r-app"></i>
+		</a>
+		<div>
+			<img src="http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/WNBXJBPo4iF3IJd0eeb3qFRuir.UOrqlkNhguQsc16o!/r/dHQBAAAAAAAA" class="app-box" id="app-box">
+		</div>
+		<a class="up-ico" title="官方微信">
+			<i class="fa fa-wechat" id="r-wechat"></i>
+		</a>
+		<div>
+			<img src="http://r.photo.store.qq.com/psb?/V10XpeQD3fAAIW/tNXbpUfaHlZQxD2hQtqVOjCJd1fMxAeIraFpha2.ojQ!/r/dAsBAAAAAAAA" class="wechat-box" id="wechat-box">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			// document.getElementById("user").onmouseover = function(){
+			// 	show("u-card")
+			// }
+			show("user","u-card");
+			hide("user","u-card");
+			show("download","app");
+			hide("download","app");
+			// var area = document.getElementById('s-area');
+			document.getElementById('search').onclick = function(){
+				ApAndDisap();
+			}
+			document.getElementById('r-app').onmouseover = function(){
+				showed("app-box",160,1.125);
+			}
+			document.getElementById('r-app').onmouseout = function(){
+				hidden("app-box");
+			}
+			document.getElementById('r-wechat').onmouseover = function(){
+				showed("wechat-box",160,1.25);
+			}
+			document.getElementById('r-wechat').onmouseout = function(){
+				hidden("wechat-box");
+			}
+		}
+		// 搜索框展开
+		function appear(){
+			clearInterval(timer);
+			var area = document.getElementById('s-area');
+			var w = 0;
+			var timer = setInterval(function(){
+				if(w < 190){
+					w += 10;
+					area.style.width = w +"px";
+				}
+				else{
+					clearInterval(timer);
+				}
+			},10)
+		}
+		// 搜索框隐藏
+		function disappear(){
+			clearInterval(timer);
+			var area = document.getElementById('s-area');
+			var w = 1;
+			var timer = setInterval(function(){
+				if(w > 0){
+					w -= 0.1;
+					area.style.opacity = w;
+				}
+				else{
+					clearInterval(timer);
+				}
+			},20)
+		}
+		// 判断
+		function ApAndDisap(){
+			var area = document.getElementById('s-area');
+			if (area.style.opacity == 1) {
+				disappear();
+			}
+			else{
+				area.style.opacity = 1;
+				appear();
+			}
+		}
+		// app和wechat的显示
+		function showed(i,w,mul){
+			var box = document.getElementById(i);
+			clearInterval(timer);
+			var addW = 0;
+			var addH = 0;
+			var timer = setInterval(function(){
+				if(addW < w){
+					addW += 5;
+					addH += 5*mul;
+					box.style.width = addW +"px";
+					box.style.height = addH + "px";
+				}
+				else{
+				}
+			},5)
+		}
+		// app和wechat的消失
+		function hidden(i){
+			var box = document.getElementById(i);
+			box.style.width = 0 +"px";
+			box.style.height = 0 + "px";
+		}
+		// Card显示
+		function show(id,card){
+			document.getElementById(id).onmouseover = function(){
+				document.getElementById(card).style.display = "block";
+			}
+		}
+		// Card隐藏
+		function hide(id,card) {
+			document.getElementById(id).onmouseout = function(){ 
+				document.getElementById(card).style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
